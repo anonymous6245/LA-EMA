@@ -1,19 +1,6 @@
-# Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation (CVPR 2023)
-by Yunhao Bai, Duowen Chen, Qingli Li, Wei Shen, and Yan Wang.
+# AdaEMA: Adaptive Exponential Moving Average Dual-Student Framework for Semi-Supervised Medical Image Segmentation
 ## Introduction
-Official code for "[Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation](https://arxiv.org/abs/2305.00673)". (CVPR 2023)
-## Requirements
-This repository is based on PyTorch 1.8.0, CUDA 11.1 and Python 3.6.13. All experiments in our paper were conducted on NVIDIA GeForce RTX 3090 GPU with an identical experimental setting.
-## News
-2024/3/27 
-
-1.Many issues interest in KDE plot, we provide `code/KDE_demo.py` to show how we draw the KDE distribution.
-
-2.We provide BCP model parameters trained on 20% NIH-Pancreas. 链接: https://pan.baidu.com/s/1kGqRsEF4BX_yChKV3kMNVQ?pwd=hsjb 提取码: hsjb 
-
-2023/07 
-
-We provide NIH-Pancreas dataset codes `code/pancreas`, data split (and other information) could be got at [CoraNet](https://github.com/koncle/CoraNet)
+Official code for "[AdaEMA: Adaptive Exponential Moving Average Dual-Student Framework for Semi-Supervised Medical Image Segmentation]".
 ## Usage
 We provide `code`, `data_split` and `models` for LA and ACDC dataset.
 
@@ -21,39 +8,15 @@ Data could be got at [LA](https://github.com/yulequan/UA-MT/tree/master/data) an
 
 To train a model,
 ```
-python ./code/LA_BCP_train.py  #for LA training
-python ./code/ACDC_BCP_train.py --exp exp_name  #for ACDC training
+python LA_train.py  #for LA training
+python ACDC_train.py --exp exp_name  #for ACDC training
 ``` 
 
 To test a model,
 ```
-python ./code/test_LA.py  #for LA testing
-python ./code/test_ACDC.py --exp exp_name  #for ACDC testing
+python test_LA.py  #for LA testing
+python test_ACDC.py --exp exp_name  #for ACDC testing
 ```
-
-## Citation
-
-If you find these projects useful, please consider citing:
-
-```bibtex
-@article{DBLP:journals/corr/abs-2305-00673,
-  author       = {Yunhao Bai and
-                  Duowen Chen and
-                  Qingli Li and
-                  Wei Shen and
-                  Yan Wang},
-  title        = {Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation},
-  journal      = {CoRR},
-  volume       = {abs/2305.00673},
-  year         = {2023}
-}
-```
-
-## Acknowledgements
-Our code is largely based on [SS-Net](https://github.com/ycwu1997/SS-Net). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
-
-## Questions
-If you have any questions, welcome contact me at 'yhbai@stu.ecnu.edu.cn'
 
 
 
