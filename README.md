@@ -1,6 +1,6 @@
-# AdaEMA: Adaptive Exponential Moving Average Dual-Student Framework for Semi-Supervised Medical Image Segmentation
+# Adaptive Knowledge Transfering with Switching Dual-Student Framework for Semi-Supervised Medical Image Segmentation
 ## Introduction
-Official code for "[AdaEMA: Adaptive Exponential Moving Average Dual-Student Framework for Semi-Supervised Medical Image Segmentation]".
+Official code for "[Adaptive Knowledge Transfering with Switching Dual-Student Framework for Semi-Supervised Medical Image Segmentation]".
 ## Usage
 We provide `code`, `data_split` and `models` for LA and ACDC dataset.
 
